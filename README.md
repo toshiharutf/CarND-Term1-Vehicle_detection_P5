@@ -47,6 +47,8 @@ Also, the lane identification algorithm from the fourth project of the SDCNN fro
 
 [Link to the complete video](./project_video_output.mp4)
 
+The video pipeline is implemented inside **car_detection_pipeline.py**
+
 **Processing time**: The actual pipeline (lanes and vehicles identification) runs at approximately 2.5 fps using a GTX1060 with Keras, and a Core i5-2500K. Since the project video was recorded at 25fps, the performance of the pipeline is still not suitable for real-time implementation.
 
 # 4. Conclusions and future work
