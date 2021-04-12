@@ -1,8 +1,8 @@
-# P5 Vehicle Detection
+# Lanes and vehicles detection Pipeline
 ---
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-This repo contains an image processing pipeline capable of lanes and vehicles identification. The lane identification was build using image processing techniques for edges identication and filtering. The vehicle identification works using a deep learning algorithm.
+This repo contains an image processing pipeline capable of lanes and vehicles identification. The lane identification was build using image processing techniques for edges identication and filtering. The vehicle identification was implemented using deep learning.
 
 
 # Objectives
@@ -40,8 +40,6 @@ Notice that there is some false positives on the left side. A heatmap is generat
 
 # 3. Video Pipeline
 All the steps mentioned before are put together in the video processing pipeline. First, the image is cropped and sectioned in multiple small searchable windows. Then, the image search is run through all those windows. After that, the vehicle locations are identified using the heatmap. False-negative are filtered using a minumum threshold to the heatmap.
-
-Also, the lane identification algorithm from the fourth project of the SDCNN from Udacity is added. An small fragment of the video can be seen below. 
 
 ![alt text](writeup_images/project_video_output.gif)
 
